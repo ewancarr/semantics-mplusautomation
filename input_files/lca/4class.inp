@@ -1,0 +1,6 @@
+DATA:      FILE = ../../data/ex7.3.dat;
+VARIABLE:  NAMES ARE u1-u4 x1-x10;
+           USEVARIABLES = u1-u4;
+           CATEGORICAL = u1-u4;
+           CLASSES = c (4); 
+ ANALYSIS: TYPE = MIXTURE;

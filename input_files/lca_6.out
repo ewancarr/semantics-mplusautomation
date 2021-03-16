@@ -1,0 +1,389 @@
+Mplus VERSION 8.4 (Linux)
+MUTHEN & MUTHEN
+03/15/2021   4:14 PM
+
+INPUT INSTRUCTIONS
+
+  DATA:       FILE = ex4.4.dat;
+  VARIABLE:   NAMES = y1-y8;
+  CLASSES =   c(6);
+  ANALYSIS:   TYPE = MIXTURE;
+
+
+
+*** WARNING in MODEL command
+  All variables are uncorrelated with all other variables within class.
+  Check that this is what is intended.
+   1 WARNING(S) FOUND IN THE INPUT INSTRUCTIONS
+
+
+
+
+SUMMARY OF ANALYSIS
+
+Number of groups                                                 1
+Number of observations                                        2000
+
+Number of dependent variables                                    8
+Number of independent variables                                  0
+Number of continuous latent variables                            0
+Number of categorical latent variables                           1
+
+Observed dependent variables
+
+  Continuous
+   Y1          Y2          Y3          Y4          Y5          Y6
+   Y7          Y8
+
+Categorical latent variables
+   C
+
+
+Estimator                                                      MLR
+Information matrix                                        OBSERVED
+Optimization Specifications for the Quasi-Newton Algorithm for
+Continuous Outcomes
+  Maximum number of iterations                                 100
+  Convergence criterion                                  0.100D-05
+Optimization Specifications for the EM Algorithm
+  Maximum number of iterations                                 500
+  Convergence criteria
+    Loglikelihood change                                 0.100D-06
+    Relative loglikelihood change                        0.100D-06
+    Derivative                                           0.100D-05
+Optimization Specifications for the M step of the EM Algorithm for
+Categorical Latent variables
+  Number of M step iterations                                    1
+  M step convergence criterion                           0.100D-05
+  Basis for M step termination                           ITERATION
+Optimization Specifications for the M step of the EM Algorithm for
+Censored, Binary or Ordered Categorical (Ordinal), Unordered
+Categorical (Nominal) and Count Outcomes
+  Number of M step iterations                                    1
+  M step convergence criterion                           0.100D-05
+  Basis for M step termination                           ITERATION
+  Maximum value for logit thresholds                            15
+  Minimum value for logit thresholds                           -15
+  Minimum expected cell size for chi-square              0.100D-01
+Optimization algorithm                                         EMA
+Random Starts Specifications
+  Number of initial stage random starts                         20
+  Number of final stage optimizations                            4
+  Number of initial stage iterations                            10
+  Initial stage convergence criterion                    0.100D+01
+  Random starts scale                                    0.500D+01
+  Random seed for generating random starts                       0
+
+Input data file(s)
+  ex4.4.dat
+Input data format  FREE
+
+
+
+UNIVARIATE SAMPLE STATISTICS
+
+
+     UNIVARIATE HIGHER-ORDER MOMENT DESCRIPTIVE STATISTICS
+
+         Variable/         Mean/     Skewness/   Minimum/ % with                Percentiles
+        Sample Size      Variance    Kurtosis    Maximum  Min/Max      20%/60%    40%/80%    Median
+
+     Y1                    0.504       0.273      -3.715    0.05%      -1.197     -0.354      0.313
+            2000.000       3.347      -0.823       5.732    0.05%       0.987      2.314
+     Y2                    0.478       0.282      -3.603    0.05%      -1.236     -0.340      0.229
+            2000.000       3.259      -0.839       5.913    0.05%       0.932      2.281
+     Y3                    0.515       0.230      -4.109    0.05%      -1.239     -0.302      0.341
+            2000.000       3.368      -0.852       6.070    0.05%       1.048      2.356
+     Y4                    0.512       0.278      -3.774    0.05%      -1.218     -0.362      0.260
+            2000.000       3.326      -0.908       5.336    0.05%       1.013      2.305
+     Y5                    0.459       0.284      -4.301    0.05%      -1.244     -0.394      0.199
+            2000.000       3.309      -0.825       5.783    0.05%       0.962      2.257
+     Y6                    0.476       0.289      -3.565    0.05%      -1.226     -0.346      0.253
+            2000.000       3.194      -0.806       6.094    0.05%       0.918      2.213
+     Y7                    0.464       0.317      -3.551    0.05%      -1.248     -0.386      0.214
+            2000.000       3.298      -0.802       5.963    0.05%       0.922      2.242
+     Y8                    0.418       0.296      -3.904    0.05%      -1.279     -0.397      0.145
+            2000.000       3.306      -0.841       6.635    0.05%       0.876      2.189
+
+RANDOM STARTS RESULTS RANKED FROM THE BEST TO THE WORST LOGLIKELIHOOD VALUES
+
+Final stage loglikelihood values at local maxima, seeds, and initial stage start numbers:
+
+          -22553.607  399671           13
+          -22553.607  27071            15
+          -22553.607  533738           11
+          -22553.607  939021           8
+
+
+
+THE BEST LOGLIKELIHOOD VALUE HAS BEEN REPLICATED.  RERUN WITH AT LEAST TWICE THE
+RANDOM STARTS TO CHECK THAT THE BEST LOGLIKELIHOOD IS STILL OBTAINED AND REPLICATED.
+
+
+THE MODEL ESTIMATION TERMINATED NORMALLY
+
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                       61
+
+Loglikelihood
+
+          H0 Value                      -22553.607
+          H0 Scaling Correction Factor      1.2194
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                   45229.213
+          Bayesian (BIC)                 45570.868
+          Sample-Size Adjusted BIC       45377.068
+            (n* = (n + 2) / 24)
+
+
+
+FINAL CLASS COUNTS AND PROPORTIONS FOR THE LATENT CLASSES
+BASED ON THE ESTIMATED MODEL
+
+    Latent
+   Classes
+
+       1        509.97271          0.25499
+       2        257.50389          0.12875
+       3        240.62957          0.12031
+       4        520.51971          0.26026
+       5        207.70011          0.10385
+       6        263.67401          0.13184
+
+
+FINAL CLASS COUNTS AND PROPORTIONS FOR THE LATENT CLASSES
+BASED ON ESTIMATED POSTERIOR PROBABILITIES
+
+    Latent
+   Classes
+
+       1        509.97271          0.25499
+       2        257.50389          0.12875
+       3        240.62957          0.12031
+       4        520.51971          0.26026
+       5        207.70011          0.10385
+       6        263.67401          0.13184
+
+
+FINAL CLASS COUNTS AND PROPORTIONS FOR THE LATENT CLASSES
+BASED ON THEIR MOST LIKELY LATENT CLASS MEMBERSHIP
+
+Class Counts and Proportions
+
+    Latent
+   Classes
+
+       1              518          0.25900
+       2              251          0.12550
+       3              237          0.11850
+       4              529          0.26450
+       5              205          0.10250
+       6              260          0.13000
+
+
+CLASSIFICATION QUALITY
+
+     Entropy                         0.869
+
+
+Classification Probabilities for the Most Likely Latent Class Membership (Column)
+by Latent Class (Row)
+
+           1        2        3        4        5        6
+
+    1   0.910    0.000    0.041    0.000    0.000    0.049
+    2   0.000    0.873    0.009    0.119    0.000    0.000
+    3   0.105    0.006    0.889    0.000    0.000    0.000
+    4   0.000    0.048    0.000    0.919    0.033    0.000
+    5   0.000    0.000    0.000    0.096    0.904    0.000
+    6   0.110    0.000    0.000    0.000    0.000    0.890
+
+
+Logits for the Classification Probabilities for the Most Likely Latent Class Membership (Column)
+by Latent Class (Row)
+
+              1        2        3        4        5        6
+
+    1      2.912  -10.808   -0.187  -10.808  -10.808    0.000
+    2      0.000   13.679    9.050   11.684    0.000    0.000
+    3     11.561    8.718   13.698    1.110    0.000    0.000
+    4      0.000   10.771    0.178   13.732   10.403    0.000
+    5      0.000    0.000    0.000   11.468   13.715    0.000
+    6     -2.095  -13.699  -13.699  -13.699  -13.699    0.000
+
+
+MODEL RESULTS
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+Latent Class 1
+
+ Means
+    Y1                 1.911      0.102     18.711      0.000
+    Y2                 1.922      0.101     18.984      0.000
+    Y3                 1.979      0.103     19.245      0.000
+    Y4                 1.954      0.112     17.473      0.000
+    Y5                -1.007      0.058    -17.477      0.000
+    Y6                -1.019      0.056    -18.199      0.000
+    Y7                -1.079      0.060    -17.863      0.000
+    Y8                -1.073      0.060    -17.974      0.000
+
+ Variances
+    Y1                 0.702      0.025     28.539      0.000
+    Y2                 0.667      0.024     27.329      0.000
+    Y3                 0.713      0.025     28.418      0.000
+    Y4                 0.651      0.023     28.841      0.000
+    Y5                 0.699      0.025     27.566      0.000
+    Y6                 0.652      0.022     29.639      0.000
+    Y7                 0.655      0.022     29.657      0.000
+    Y8                 0.682      0.024     28.468      0.000
+
+Latent Class 2
+
+ Means
+    Y1                -1.044      0.080    -13.011      0.000
+    Y2                -1.080      0.080    -13.444      0.000
+    Y3                -1.073      0.090    -11.898      0.000
+    Y4                -1.010      0.081    -12.504      0.000
+    Y5                 0.753      0.100      7.565      0.000
+    Y6                 0.773      0.097      7.962      0.000
+    Y7                 0.726      0.101      7.205      0.000
+    Y8                 0.603      0.119      5.071      0.000
+
+ Variances
+    Y1                 0.702      0.025     28.539      0.000
+    Y2                 0.667      0.024     27.329      0.000
+    Y3                 0.713      0.025     28.418      0.000
+    Y4                 0.651      0.023     28.841      0.000
+    Y5                 0.699      0.025     27.566      0.000
+    Y6                 0.652      0.022     29.639      0.000
+    Y7                 0.655      0.022     29.657      0.000
+    Y8                 0.682      0.024     28.468      0.000
+
+Latent Class 3
+
+ Means
+    Y1                 0.637      0.115      5.528      0.000
+    Y2                 0.550      0.110      4.993      0.000
+    Y3                 0.605      0.119      5.095      0.000
+    Y4                 0.592      0.117      5.059      0.000
+    Y5                -0.987      0.073    -13.495      0.000
+    Y6                -0.914      0.070    -13.022      0.000
+    Y7                -0.998      0.072    -13.889      0.000
+    Y8                -0.938      0.077    -12.114      0.000
+
+ Variances
+    Y1                 0.702      0.025     28.539      0.000
+    Y2                 0.667      0.024     27.329      0.000
+    Y3                 0.713      0.025     28.418      0.000
+    Y4                 0.651      0.023     28.841      0.000
+    Y5                 0.699      0.025     27.566      0.000
+    Y6                 0.652      0.022     29.639      0.000
+    Y7                 0.655      0.022     29.657      0.000
+    Y8                 0.682      0.024     28.468      0.000
+
+Latent Class 4
+
+ Means
+    Y1                -0.968      0.053    -18.270      0.000
+    Y2                -0.984      0.050    -19.815      0.000
+    Y3                -0.969      0.055    -17.736      0.000
+    Y4                -0.967      0.052    -18.564      0.000
+    Y5                 2.001      0.084     23.956      0.000
+    Y6                 1.975      0.080     24.693      0.000
+    Y7                 1.980      0.081     24.315      0.000
+    Y8                 1.975      0.075     26.481      0.000
+
+ Variances
+    Y1                 0.702      0.025     28.539      0.000
+    Y2                 0.667      0.024     27.329      0.000
+    Y3                 0.713      0.025     28.418      0.000
+    Y4                 0.651      0.023     28.841      0.000
+    Y5                 0.699      0.025     27.566      0.000
+    Y6                 0.652      0.022     29.639      0.000
+    Y7                 0.655      0.022     29.657      0.000
+    Y8                 0.682      0.024     28.468      0.000
+
+Latent Class 5
+
+ Means
+    Y1                -1.030      0.073    -14.084      0.000
+    Y2                -0.989      0.072    -13.721      0.000
+    Y3                -0.963      0.076    -12.749      0.000
+    Y4                -1.058      0.072    -14.609      0.000
+    Y5                 3.389      0.090     37.483      0.000
+    Y6                 3.398      0.091     37.235      0.000
+    Y7                 3.484      0.090     38.587      0.000
+    Y8                 3.386      0.093     36.361      0.000
+
+ Variances
+    Y1                 0.702      0.025     28.539      0.000
+    Y2                 0.667      0.024     27.329      0.000
+    Y3                 0.713      0.025     28.418      0.000
+    Y4                 0.651      0.023     28.841      0.000
+    Y5                 0.699      0.025     27.566      0.000
+    Y6                 0.652      0.022     29.639      0.000
+    Y7                 0.655      0.022     29.657      0.000
+    Y8                 0.682      0.024     28.468      0.000
+
+Latent Class 6
+
+ Means
+    Y1                 3.287      0.119     27.588      0.000
+    Y2                 3.187      0.124     25.635      0.000
+    Y3                 3.245      0.115     28.178      0.000
+    Y4                 3.295      0.103     32.053      0.000
+    Y5                -1.022      0.080    -12.808      0.000
+    Y6                -0.920      0.076    -12.083      0.000
+    Y7                -0.840      0.077    -10.963      0.000
+    Y8                -1.054      0.085    -12.379      0.000
+
+ Variances
+    Y1                 0.702      0.025     28.539      0.000
+    Y2                 0.667      0.024     27.329      0.000
+    Y3                 0.713      0.025     28.418      0.000
+    Y4                 0.651      0.023     28.841      0.000
+    Y5                 0.699      0.025     27.566      0.000
+    Y6                 0.652      0.022     29.639      0.000
+    Y7                 0.655      0.022     29.657      0.000
+    Y8                 0.682      0.024     28.468      0.000
+
+Categorical Latent Variables
+
+ Means
+    C#1                0.660      0.188      3.500      0.000
+    C#2               -0.024      0.197     -0.120      0.904
+    C#3               -0.091      0.271     -0.338      0.736
+    C#4                0.680      0.173      3.935      0.000
+    C#5               -0.239      0.202     -1.182      0.237
+
+
+QUALITY OF NUMERICAL RESULTS
+
+     Condition Number for the Information Matrix              0.781E-02
+       (ratio of smallest to largest eigenvalue)
+
+
+     Beginning Time:  16:14:27
+        Ending Time:  16:14:30
+       Elapsed Time:  00:00:03
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2019 Muthen & Muthen

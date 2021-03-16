@@ -1,0 +1,4 @@
+DATA:       FILE = ex4.4.dat;
+VARIABLE:   NAMES = y1-y8;
+CLASSES =   c(4);
+ANALYSIS:   TYPE = MIXTURE;

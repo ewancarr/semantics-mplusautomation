@@ -1,0 +1,303 @@
+Mplus VERSION 8.4 (Linux)
+MUTHEN & MUTHEN
+03/16/2021  11:12 AM
+
+INPUT INSTRUCTIONS
+
+  DATA:      FILE = ../../data/ex7.3.dat;
+  VARIABLE:  NAMES ARE u1-u4 x1-x10;
+             USEVARIABLES = u1-u4;
+             CATEGORICAL = u1-u4;
+             CLASSES = c (2);
+   ANALYSIS: TYPE = MIXTURE;
+
+
+
+INPUT READING TERMINATED NORMALLY
+
+
+
+
+SUMMARY OF ANALYSIS
+
+Number of groups                                                 1
+Number of observations                                         500
+
+Number of dependent variables                                    4
+Number of independent variables                                  0
+Number of continuous latent variables                            0
+Number of categorical latent variables                           1
+
+Observed dependent variables
+
+  Binary and ordered categorical (ordinal)
+   U1          U2          U3          U4
+
+Categorical latent variables
+   C
+
+
+Estimator                                                      MLR
+Information matrix                                        OBSERVED
+Optimization Specifications for the Quasi-Newton Algorithm for
+Continuous Outcomes
+  Maximum number of iterations                                 100
+  Convergence criterion                                  0.100D-05
+Optimization Specifications for the EM Algorithm
+  Maximum number of iterations                                 500
+  Convergence criteria
+    Loglikelihood change                                 0.100D-06
+    Relative loglikelihood change                        0.100D-06
+    Derivative                                           0.100D-05
+Optimization Specifications for the M step of the EM Algorithm for
+Categorical Latent variables
+  Number of M step iterations                                    1
+  M step convergence criterion                           0.100D-05
+  Basis for M step termination                           ITERATION
+Optimization Specifications for the M step of the EM Algorithm for
+Censored, Binary or Ordered Categorical (Ordinal), Unordered
+Categorical (Nominal) and Count Outcomes
+  Number of M step iterations                                    1
+  M step convergence criterion                           0.100D-05
+  Basis for M step termination                           ITERATION
+  Maximum value for logit thresholds                            15
+  Minimum value for logit thresholds                           -15
+  Minimum expected cell size for chi-square              0.100D-01
+Optimization algorithm                                         EMA
+Random Starts Specifications
+  Number of initial stage random starts                         20
+  Number of final stage optimizations                            4
+  Number of initial stage iterations                            10
+  Initial stage convergence criterion                    0.100D+01
+  Random starts scale                                    0.500D+01
+  Random seed for generating random starts                       0
+Link                                                         LOGIT
+
+Input data file(s)
+  ../../data/ex7.3.dat
+Input data format  FREE
+
+
+UNIVARIATE PROPORTIONS AND COUNTS FOR CATEGORICAL VARIABLES
+
+    U1
+      Category 1    0.678          339.000
+      Category 2    0.322          161.000
+    U2
+      Category 1    0.686          343.000
+      Category 2    0.314          157.000
+    U3
+      Category 1    0.322          161.000
+      Category 2    0.678          339.000
+    U4
+      Category 1    0.334          167.000
+      Category 2    0.666          333.000
+
+
+RANDOM STARTS RESULTS RANKED FROM THE BEST TO THE WORST LOGLIKELIHOOD VALUES
+
+Final stage loglikelihood values at local maxima, seeds, and initial stage start numbers:
+
+            -965.244  253358           2
+            -965.244  93468            3
+            -965.244  939021           8
+            -965.244  76974            16
+
+
+
+THE BEST LOGLIKELIHOOD VALUE HAS BEEN REPLICATED.  RERUN WITH AT LEAST TWICE THE
+RANDOM STARTS TO CHECK THAT THE BEST LOGLIKELIHOOD IS STILL OBTAINED AND REPLICATED.
+
+
+THE MODEL ESTIMATION TERMINATED NORMALLY
+
+
+
+MODEL FIT INFORMATION
+
+Number of Free Parameters                        9
+
+Loglikelihood
+
+          H0 Value                        -965.244
+          H0 Scaling Correction Factor      1.0131
+            for MLR
+
+Information Criteria
+
+          Akaike (AIC)                    1948.488
+          Bayesian (BIC)                  1986.420
+          Sample-Size Adjusted BIC        1957.853
+            (n* = (n + 2) / 24)
+
+Chi-Square Test of Model Fit for the Binary and Ordered Categorical
+(Ordinal) Outcomes
+
+          Pearson Chi-Square
+
+          Value                              6.287
+          Degrees of Freedom                     6
+          P-Value                           0.3918
+
+          Likelihood Ratio Chi-Square
+
+          Value                              5.605
+          Degrees of Freedom                     6
+          P-Value                           0.4688
+
+
+
+FINAL CLASS COUNTS AND PROPORTIONS FOR THE LATENT CLASSES
+BASED ON THE ESTIMATED MODEL
+
+    Latent
+   Classes
+
+       1        136.38064          0.27276
+       2        363.61936          0.72724
+
+
+FINAL CLASS COUNTS AND PROPORTIONS FOR THE LATENT CLASSES
+BASED ON ESTIMATED POSTERIOR PROBABILITIES
+
+    Latent
+   Classes
+
+       1        136.38064          0.27276
+       2        363.61936          0.72724
+
+
+FINAL CLASS COUNTS AND PROPORTIONS FOR THE LATENT CLASSES
+BASED ON THEIR MOST LIKELY LATENT CLASS MEMBERSHIP
+
+Class Counts and Proportions
+
+    Latent
+   Classes
+
+       1              127          0.25400
+       2              373          0.74600
+
+
+CLASSIFICATION QUALITY
+
+     Entropy                         0.904
+
+
+Classification Probabilities for the Most Likely Latent Class Membership (Column)
+by Latent Class (Row)
+
+           1        2
+
+    1   0.918    0.082
+    2   0.005    0.995
+
+
+Logits for the Classification Probabilities for the Most Likely Latent Class Membership (Column)
+by Latent Class (Row)
+
+              1        2
+
+    1      2.422    0.000
+    2     -5.339    0.000
+
+
+MODEL RESULTS
+
+                                                    Two-Tailed
+                    Estimate       S.E.  Est./S.E.    P-Value
+
+Latent Class 1
+
+ Thresholds
+    U1$1              -2.063      0.373     -5.536      0.000
+    U2$1              -1.724      0.300     -5.755      0.000
+    U3$1               2.331      0.390      5.985      0.000
+    U4$1               2.078      0.320      6.490      0.000
+
+Latent Class 2
+
+ Thresholds
+    U1$1               2.091      0.182     11.502      0.000
+    U2$1               2.056      0.180     11.401      0.000
+    U3$1              -2.187      0.203    -10.760      0.000
+    U4$1              -1.937      0.183    -10.613      0.000
+
+Categorical Latent Variables
+
+ Means
+    C#1               -0.981      0.116     -8.468      0.000
+
+
+RESULTS IN PROBABILITY SCALE
+
+Latent Class 1
+
+ U1
+    Category 1         0.113      0.037      3.024      0.002
+    Category 2         0.887      0.037     23.800      0.000
+ U2
+    Category 1         0.151      0.038      3.934      0.000
+    Category 2         0.849      0.038     22.056      0.000
+ U3
+    Category 1         0.911      0.031     28.987      0.000
+    Category 2         0.089      0.031      2.817      0.005
+ U4
+    Category 1         0.889      0.032     28.072      0.000
+    Category 2         0.111      0.032      3.514      0.000
+
+Latent Class 2
+
+ U1
+    Category 1         0.890      0.018     50.016      0.000
+    Category 2         0.110      0.018      6.181      0.000
+ U2
+    Category 1         0.887      0.018     48.873      0.000
+    Category 2         0.113      0.018      6.256      0.000
+ U3
+    Category 1         0.101      0.018      5.472      0.000
+    Category 2         0.899      0.018     48.748      0.000
+ U4
+    Category 1         0.126      0.020      6.267      0.000
+    Category 2         0.874      0.020     43.498      0.000
+
+
+LATENT CLASS ODDS RATIO RESULTS
+
+                                         (Est. - 1) Two-Tailed
+                    Estimate       S.E.     / S.E.    P-Value
+
+Latent Class 1 Compared to Latent Class 2
+
+ U1
+    Category > 1      63.673     25.877      2.422      0.015
+ U2
+    Category > 1      43.796     14.941      2.864      0.004
+ U3
+    Category > 1       0.011      0.005   -213.185      0.000
+ U4
+    Category > 1       0.018      0.007   -150.663      0.000
+
+
+QUALITY OF NUMERICAL RESULTS
+
+     Condition Number for the Information Matrix              0.600E-01
+       (ratio of smallest to largest eigenvalue)
+
+
+     Beginning Time:  11:12:44
+        Ending Time:  11:12:44
+       Elapsed Time:  00:00:00
+
+
+
+MUTHEN & MUTHEN
+3463 Stoner Ave.
+Los Angeles, CA  90066
+
+Tel: (310) 391-9971
+Fax: (310) 391-8971
+Web: www.StatModel.com
+Support: Support@StatModel.com
+
+Copyright (c) 1998-2019 Muthen & Muthen
