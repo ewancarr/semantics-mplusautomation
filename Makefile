@@ -1,6 +1,6 @@
-.DEFAULT_GOAL := semantics.html
+.DEFAULT_GOAL := index.html
 
-semantics.html: semantics.Rmd
-	Rscript -e 'rmarkdown::render("semantics.Rmd", output_format = "all")'
+index.html: index.Rmd
+	Rscript -e 'rmarkdown::render("index.Rmd", output_format = "all")'
 
 

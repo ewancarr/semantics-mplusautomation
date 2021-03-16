@@ -1,4 +1,9 @@
 y*.inp
-./*.dat
-./cfa.*
+*.dat
+cfa.*
+data
 *.log
+index_files
+.directory
+.Rhistory
+
