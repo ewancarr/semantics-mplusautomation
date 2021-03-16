@@ -20,12 +20,6 @@ style_mono_accent(base_color = "#43418A",
                   text_font_google   = google_font("Merriweather", "400",
                                                    "400i"),
                   code_font_google   = google_font("Fira Mono"))
-
-
-rinline <- function(code) {
-  sprintf('``` `r %s` ```', code)
-}
-
 library(tidyverse)
 library(knitr)
 library(lubridate)
@@ -177,8 +171,7 @@ class: middle
 *Ewan Carr, Silia Vitoratou, Trudie Chalder, and Kimberley Goldsmith*
 ]
 
-<br><br><br><br><br><br>
-<br><br>
+<br><br><br><br><br><br><br><br>
 ![](images/pace_medrxiv.png)
 .tiny[<https://www.medrxiv.org/content/10.1101/2021.01.25.21250436v1>]
 ]
@@ -771,12 +764,6 @@ runModels("a_folder_of_models")
 ##      Output saved in 'cfa.out'.
 ```
 ]
-
-
-
-
-
-
 
 ---
 
