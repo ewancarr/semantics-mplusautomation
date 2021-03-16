@@ -1,7 +1,7 @@
 ---
 title: "More efficient SEM via R? 🎉"
 author: "Dr Ewan Carr<br><small>@ewancarr</small>"
-institute: "Department of Biostatistics & Health Informatics"
+institute: "Department of Biostatistics & Health Informatics<br>"
 date: "SEMantics<br><br>16<sup><small>th</small></sup> March 2021"
 output:
   xaringan::moon_reader:
@@ -13,6 +13,7 @@ output:
       countIncrementalSlides: false
       beforeInit: "macro.js"
 ---
+class: middle, center
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
@@ -36,29 +37,21 @@ library(lavaan)
  .cod
 }
 
-.scroll-output {
-  height: 90%;
-  overflow-y: scroll;
-}
-
-
-.center-left {
-  position:          relative;
-  top:               50%;
-  transform:         translateY(50%);
-}
-
-.center-right {
-  position:          relative;
-  top:               50%;
-  transform:         translateY(10%);
-}
-
 .tiny{font-size: 50%}
+.big{font-size: 140%}
 .very-small{font-size: 60%}
 ```
 
-# Three minute version `r emo::ji('clock')`
+
+.big[
+<code>
+ewancarr.github.io/semantics-mplusautomation
+</code>
+]
+
+---
+
+# Three minute version `r emo::ji('watch')`
 
 
 1. `MplusAutomation` is an R package that allows us to programatically interact
